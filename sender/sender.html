@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div>
+        <input placeholder="enter username..."
+                type ="text"
+                id="username-input"/>  <!-- //id given to refer -->
+                
+       <div>
+        <button onclick="sendUsername">send</button> 
+        <!-- //send the useername to the server and the server will store the username  -->
+        <button onclick="startCall()">start-call</button>
+         <!-- //will send this offer to the server and the server will store the username previously given -->
+    </div>
+       </div> 
+
+    <div id="video-call-div">
+        <video src="local-video" autoplay></video>
+        <video src="remote-video" autoplay></video>
+        <div class="call-action-div">
+           <button onclick="muteVideo()">Mute video</button> 
+           <button onclick="muteAudio()">mute audio</button> 
+
+
+        </div>
+    </div>
+    <script src ="./sender.js"></script>
+</body>
+</html>
+
+<!-- 
+//FIRST WE WILL DO THIS ::::
+//we will first create an input box that will have the sender and would put on the server node 
+//receiver uses the username to call the sender -->
