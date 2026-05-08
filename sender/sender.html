@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>webRTC</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -21,8 +19,8 @@
        </div> 
 
     <div id="video-call-div">
-        <video src="local-video" autoplay></video>
-        <video src="remote-video" autoplay></video>
+        <video id="local-video" autoplay></video>
+        <video id="remote-video" autoplay></video>
         <div class="call-action-div">
            <button onclick="muteVideo()">Mute video</button> 
            <button onclick="muteAudio()">mute audio</button> 
