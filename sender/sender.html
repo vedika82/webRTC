@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>webRTC</title>
+    <title>sender</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -11,22 +11,20 @@
                 id="username-input"/>  <!-- //id given to refer -->
                 
        <div>
-        <button onclick="sendUsername">send</button> 
+        <button onclick="sendUsername()">send</button> 
         <!-- //send the useername to the server and the server will store the username  -->
         <button onclick="startCall()">start-call</button>
          <!-- //will send this offer to the server and the server will store the username previously given -->
     </div>
        </div> 
 
-    <div id="video-call-div">
-        <video id="local-video" autoplay></video>
-        <video id="remote-video" autoplay></video>
-        <div class="call-action-div">
-           <button onclick="muteVideo()">Mute video</button> 
-           <button onclick="muteAudio()">mute audio</button> 
-
-
-        </div>
+      <div id="video-call-div">
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <button onclick="muteVideo()">Mute Video</button>
+                <button onclick="muteAudio()">Mute Audio</button>
+            </div>
     </div>
     <script src ="./sender.js"></script>
 </body>
