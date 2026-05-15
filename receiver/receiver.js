@@ -1,4 +1,4 @@
-const webSocket = new WebSocket("ws://SERVER-IP-HERE:3000")
+const webSocket = new WebSocket("ws://localhost:3000")
 // in the brackets we write the url for the server
 
 //to send message to the websocket
@@ -48,6 +48,9 @@ let username
 function joinCall() {
     username = document.getElementById("username-input").value
 
+    document.getElementById("video-call-div")
+    .style.display = "inline"
+    
     navigator.getUserMedia({
         video: {
             frameRate: 24,
