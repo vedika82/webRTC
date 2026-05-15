@@ -1,4 +1,4 @@
-const webSocket = new WebSocket("ws://SERVER-IP-HERE:3000")
+const webSocket = new WebSocket("ws://localhost:3000")
 // in the brackets we write the url for the server
 
 //to send message to the websocket
